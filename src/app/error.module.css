@@ -1,0 +1,59 @@
+.page {
+  min-height: 70vh;
+  display: grid;
+  place-content: center;
+  gap: 1rem;
+  padding: 6rem var(--gutter, 1.5rem) 4rem;
+  text-align: center;
+  background: #000;
+  color: #d0d0d0;
+}
+
+.body {
+  margin: 0;
+  background: #000;
+  color: #d0d0d0;
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  font-weight: 500;
+  color: #f2f2f2;
+}
+
+.copy {
+  margin: 0;
+  color: #8a8a8a;
+}
+
+.meta {
+  margin: 0;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  color: #5a5a5a;
+}
+
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin: 0.5rem auto 0;
+  padding: 0.65rem 1.1rem;
+  border: 1px solid #3a3a3a;
+  background: transparent;
+  color: #e8e8e8;
+  text-decoration: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+.button:hover {
+  border-color: #e2662c;
+  color: #e2662c;
+}
