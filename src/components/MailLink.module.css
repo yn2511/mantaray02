@@ -1,0 +1,18 @@
+.link {
+  position: fixed;
+  right: clamp(1.25rem, 2.2vw, 2.5rem);
+  bottom: clamp(1.25rem, 2.2vw, 2.5rem);
+  z-index: 45;
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  color: #4a4a4a;
+  transition: color 0.25s var(--ease);
+}
+
+.link:hover {
+  color: #e2662c;
+}

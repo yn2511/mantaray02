@@ -1,0 +1,63 @@
+.page {
+  max-width: 40rem;
+  padding: calc(var(--header-h) + 3rem) var(--gutter) 7rem;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  color: #f0f0f0;
+}
+
+.brand {
+  margin-top: 2.5rem;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: #d0d0d0;
+}
+
+.name {
+  margin-top: 0.35rem;
+  color: #6a6a6a;
+  letter-spacing: 0.06em;
+  font-size: 0.88rem;
+}
+
+.copy {
+  margin-top: 2rem;
+  display: grid;
+  gap: 1.1rem;
+  color: #9a9a9a;
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+.copy a {
+  color: #e2662c;
+}
+
+.contact {
+  margin-top: 3rem;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.contact p {
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #5a5a5a;
+}
+
+.contact a {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  color: #d8d8d8;
+}
+
+.contact a:hover {
+  color: #e2662c;
+}

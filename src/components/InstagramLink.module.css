@@ -1,0 +1,21 @@
+.link {
+  position: fixed;
+  left: clamp(1.25rem, 2.2vw, 2.5rem);
+  bottom: clamp(1.25rem, 2.2vw, 2.5rem);
+  z-index: 45;
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  color: #4a4a4a;
+  transition: color 0.25s var(--ease);
+}
+
+.link:hover {
+  color: #e2662c;
+}
+
+.icon {
+  width: 1.05rem;
+  height: 1.05rem;
+}

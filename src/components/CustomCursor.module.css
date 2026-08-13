@@ -1,0 +1,24 @@
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 16px;
+  height: 16px;
+  margin: -8px 0 0 -8px;
+  border-radius: 50%;
+  background: #e2662c;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s linear;
+}
+
+.visible {
+  opacity: 1;
+}
+
+@media (pointer: coarse) {
+  .cursor {
+    display: none;
+  }
+}
