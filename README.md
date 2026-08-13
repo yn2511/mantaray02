@@ -2,6 +2,7 @@
 
 사진작가 **가오리 / Manta Ray (김가을)** 포트폴리오.
 
+- 라이브: https://mantaray02.vercel.app
 - 예정 도메인: `mantaray02.com`
 - Instagram: [@manta_ray_02](https://www.instagram.com/manta_ray_02/)
 
