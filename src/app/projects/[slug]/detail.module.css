@@ -1,0 +1,27 @@
+.header {
+  max-width: 40rem;
+  margin: 0 auto 2rem;
+  padding: 0 var(--gutter) 1rem;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 3vw, 2rem);
+  font-weight: 400;
+  line-height: 1.35;
+  color: #f0f0f0;
+}
+
+.year {
+  margin-top: 0.65rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  color: #5a5a5a;
+}
+
+.body {
+  margin-top: 1.25rem;
+  color: #9a9a9a;
+  font-weight: 300;
+  line-height: 1.8;
+}
