@@ -1,0 +1,136 @@
+.canvas {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background: #000;
+}
+
+.columns {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  padding: 0 2.5vw;
+  opacity: 0.98;
+}
+
+.column {
+  overflow: hidden;
+  height: 100%;
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    #000 8%,
+    #000 92%,
+    transparent 100%
+  );
+}
+
+.track {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  will-change: transform;
+}
+
+.speed1 .track {
+  animation: marquee 55s linear infinite;
+}
+
+.speed2 .track {
+  animation: marquee 72s linear infinite reverse;
+}
+
+.speed3 .track {
+  animation: marquee 63s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-33.333%);
+  }
+}
+
+.tile {
+  margin: 0;
+  overflow: hidden;
+  background: #0a0a0a;
+}
+
+.tileImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding-right: clamp(3rem, 18vw, 22rem);
+  pointer-events: none;
+}
+
+.overlayLink {
+  pointer-events: auto;
+  font-family: var(--font-display);
+  font-size: clamp(2.6rem, 5vw, 3.6rem);
+  font-weight: 400;
+  line-height: 1.95;
+  letter-spacing: -0.01em;
+  transition: opacity 0.2s var(--ease);
+}
+
+.overlayLink:hover {
+  opacity: 0.72;
+}
+
+.accent {
+  color: var(--accent);
+}
+
+.mid {
+  color: var(--accent-mid);
+}
+
+.deep {
+  color: var(--accent-deep);
+}
+
+@media (max-width: 900px) {
+  .columns {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 0.75rem;
+    opacity: 0.55;
+  }
+
+  .column:nth-child(3) {
+    display: none;
+  }
+
+  .overlay {
+    align-items: center;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .overlayLink {
+    line-height: 1.45;
+    font-size: clamp(2.2rem, 10vw, 2.8rem);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .track {
+    animation: none !important;
+  }
+}
