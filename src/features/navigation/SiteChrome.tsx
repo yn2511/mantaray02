@@ -13,6 +13,7 @@ const MENU_LINKS = [
   { href: "/portraits", label: "Portraits" },
   { href: "/commissions", label: "Commissions" },
   { href: "/about", label: "Artist CV" },
+  { href: "/upload-guide", label: "Upload Guide" },
 ] as const;
 
 export function SiteChrome() {
